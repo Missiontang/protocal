@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>借款咨询服务协议</title>
+  </head>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+  </style>
+  <body>
+
+  <div id="myCanvas" style="border: 1px solid #ccc;">
+
+  </div>
+
+  <script src="js/drawAgreement.js"></script>
+
+  <script type="text/javascript">
+
+      var a = {
+              year:{
+                  name:" " ,
+                  x:0,
+                  y:0
+              }
+          };
+
+
+      drawCanvas("img/5.jpg","myCanvas", a);
+    document.getElementById("myCanvas").addEventListener('click',function (e) {
+//        console.log(e.layerX,e.layerY);
+        var layerX = e.layerX;
+        var layerY = e.layerY;
+        console.log(layerX,layerY);
+    });
+
+  </script>
+
+
+  </body>
+</html>

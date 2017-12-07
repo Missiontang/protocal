@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>借款咨询服务协议</title>
+  </head>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+  </style>
+  <body>
+
+  <div id="myCanvas" style="border: 1px solid #ccc;">
+
+  </div>
+
+  <script src="js/drawAgreement.js"></script>
+
+  <script type="text/javascript">
+
+      var a = {
+              jia_date_year:{
+                  name:"2017" ,
+                  x:180,
+                  y:770
+              },
+              jia_date_month:{
+                  name:"9" ,
+                  x:307,
+                  y:770
+              },
+              jia_date_day:{
+                  name:"30" ,
+                  x:371,
+                  y:770
+              },
+              yi_date_year:{
+                  name:"2017" ,
+                  x:665,
+                  y:770
+              },
+              yi_date_month:{
+                  name:"9" ,
+                  x:783,
+                  y:770
+              },
+              yi_date_day:{
+                  name:"30" ,
+                  x:844,
+                  y:770
+              },
+              bing_date_year:{
+                  name:"2017" ,
+                  x:180,
+                  y:1130
+              },
+              bing_date_month:{
+                  name:"9" ,
+                  x:310,
+                  y:1130
+              },
+              bing_date_day:{
+                  name:"30" ,
+                  x:373,
+                  y:1130
+              }
+          };
+
+
+      drawCanvas("img/6.jpg","myCanvas", a);
+    document.getElementById("myCanvas").addEventListener('click',function (e) {
+//        console.log(e.layerX,e.layerY);
+        var layerX = e.layerX;
+        var layerY = e.layerY;
+        console.log(layerX,layerY);
+    });
+
+  </script>
+
+
+  </body>
+</html>

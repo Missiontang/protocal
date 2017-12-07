@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>借款咨询服务协议</title>
+  </head>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+  </style>
+  <body>
+
+  <div id="myCanvas" style="border: 1px solid #ccc;">
+
+  </div>
+
+  <script src="js/drawAgreement.js"></script>
+
+  <script type="text/javascript">
+
+      var a = {
+              id:{
+                  name: 123456,
+                  x:690,
+                  y:185
+              },
+              name:{
+                  name: 123456,
+                  x:157,
+                  y:370
+              },
+              ic:{
+                  name: 123456,
+                  x:157,
+                  y:464
+              },
+              number:{
+                  name: 123456,
+                  x:157,
+                  y:557
+              },
+          };
+
+
+      drawCanvas("img/1.jpg","myCanvas", a);
+    document.getElementById("myCanvas").addEventListener('click',function (e) {
+//        console.log(e.layerX,e.layerY);
+        var layerX = e.layerX;
+        var layerY = e.layerY;
+        console.log(e);
+    });
+
+  </script>
+
+
+  </body>
+</html>

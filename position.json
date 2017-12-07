@@ -1,0 +1,19 @@
+{
+  "id":{
+    "name": "data.fp",
+    "layerX":"687",
+    "layerY":"184"
+  },
+  "name":{
+    "layerX":"157",
+    "layerY":"375"
+  },
+  "身份证":{
+    "layerX":"157",
+    "layerY":"464"
+  },
+  "手机号":{
+    "layerX":"157",
+    "layerY":"557"
+  }
+}

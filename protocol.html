@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>借款咨询服务协议</title>
+  </head>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+  </style>
+  <body>
+
+  <div id="myCanvas" style="border: 1px solid #ccc;"></div>
+  <div id="myCanvas2" style="border: 1px solid #ccc;"></div>
+  <div id="myCanvas3" style="border: 1px solid #ccc;"></div>
+  <div id="myCanvas4" style="border: 1px solid #ccc;"></div>
+  <div id="myCanvas5" style="border: 1px solid #ccc;"></div>
+  <div id="myCanvas6" style="border: 1px solid #ccc;"></div>
+
+  <script src="js/drawAgreement.js"></script>
+
+  <script type="text/javascript">
+
+      var a = {
+              id:{
+                  name: "甲方",
+                  x:275,
+                  y:145
+              },
+              name:{
+                  name: "甲方地址",
+                  x:140,
+                  y:185
+              },
+              ic:{
+                  name: "乙方",
+                  x:275,
+                  y:258
+              },
+              number:{
+                  name: "32050219999999999999999",
+                  x:173,
+                  y:298
+              }
+          };
+      var b = {
+          year:{
+              name: 2017,
+              x:240,
+              y:775
+          },
+          month:{
+              name: 9,
+              x:360,
+              y:772
+          },
+          day:{
+              name: 30,
+              x:420,
+              y:772
+          },
+          year_2:{
+              name: 2017,
+              x:536,
+              y:772
+          },
+          month_2:{
+              name: 10,
+              x:658,
+              y:772
+          },
+          day_2:{
+              name: 7,
+              x:720,
+              y:772
+          }
+      };
+      var c = {
+          year:{
+              name: 2017,
+              x:227,
+              y:502
+          },
+          month:{
+              name: 10,
+              x:355,
+              y:502
+          },
+          day:{
+              name: 7,
+              x:418,
+              y:502
+          }
+      };
+      var d = {
+          year:{
+              name:" " ,
+              x:0,
+              y:0
+          }
+      };
+      var e = {
+          year:{
+              name:" " ,
+              x:0,
+              y:0
+          }
+      };
+      var f = {
+          sign:{
+              name:"qianzi" ,
+              x:200,
+              y:640
+          },
+          jia_date_year:{
+              name:"2017" ,
+              x:180,
+              y:770
+          },
+          jia_date_month:{
+              name:"9" ,
+              x:307,
+              y:770
+          },
+          jia_date_day:{
+              name:"30" ,
+              x:371,
+              y:770
+          },
+          yi_date_year:{
+              name:"2017" ,
+              x:665,
+              y:770
+          },
+          yi_date_month:{
+              name:"9" ,
+              x:783,
+              y:770
+          },
+          yi_date_day:{
+              name:"30" ,
+              x:844,
+              y:770
+          },
+          bing_date_year:{
+              name:"2017" ,
+              x:180,
+              y:1130
+          },
+          bing_date_month:{
+              name:"9" ,
+              x:310,
+              y:1130
+          },
+          bing_date_day:{
+              name:"30" ,
+              x:373,
+              y:1130
+          }
+      };
+
+      drawCanvas("img/12.7/1.jpg","myCanvas", a);
+      drawCanvas("img/12.7/2.jpg","myCanvas2", b);
+      drawCanvas("img/12.7/3.jpg","myCanvas3", c);
+      drawCanvas("img/12.7/4.jpg","myCanvas4", d);
+      drawCanvas("img/12.7/5.jpg","myCanvas5", e);
+//      drawCanvas("img/6.jpg","myCanvas6", f);
+
+    document.getElementById("myCanvas").addEventListener('click',function (e) {
+        console.log(e.layerX,e.layerY);
+        var layerX = e.layerX;
+        var layerY = e.layerY;
+        console.log(e);
+    });
+
+  </script>
+
+
+  </body>
+</html>
